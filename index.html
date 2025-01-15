@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X Clone</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-black text-white box-border">
+    <div class="container flex mx-auto">
+        <div class="first w-12 md:w-[70%] mx-2 md:mx-0 mt-5">
+            <div class="sidebar flex flex-col md:pl-20 sticky top-5">
+                <div class="logo invert">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8 md:mx-[18.5%] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                </div>
+                <ul class="flex flex-col mt-3 md:px-10 text-xl font-semibold gap-3">
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">home</span>
+                        <span class="hidden md:block">Home</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">search</span>
+                        <span class="hidden md:block">Explore</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">notifications</span>
+                        <span class="hidden md:block">Notifications</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">mail</span>
+                        <span class="hidden md:block">Messages</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">rocket_launch</span>
+                        <span class="hidden md:block">Grok</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">group</span>
+                        <span class="hidden md:block">Communities</span>
+                    </li>
+                    <li class="w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 m-auto invert r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                        <span class="hidden md:block">Premium</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">flash_on</span>
+                        <span class="hidden md:block">Verified Orgs</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">person</span>
+                        <span class="hidden md:block">Profile</span>
+                    </li>
+                    <li class="md:w-fit flex justify-start md:items-center gap-3 md:px-4  py-2 hover:border-0 hover:rounded-full hover: cursor-pointer hover:bg-[#181818]">
+                        <span class="material-symbols-outlined text-3xl">more_horiz</span>
+                        <span class="hidden md:block">More</span>
+                    </li>
+
+                </ul>
+                <button class="bg-white w-[220px] mt-10 mx-auto px-10 py-3 rounded-full text-black font-bold hover:bg-[#D7DBDC] hidden md:block">Post</button>
+
+                <div class="myacc w-[280px] h-[60px] mt-16 ml-4 px-5 py-3 hover:bg-[#181818] md:flex justify-between items-center cursor-pointer rounded-full hidden">
+                    <div class="info flex gap-3">
+                        <img src="https://pbs.twimg.com/profile_images/1830661367629762560/-5vSmlD__400x400.jpg" class="w-12 h-12 rounded-full">
+                        <div class="user flex flex-col justify-center">
+                            <div class="text-base font-semibold">Dibya</div>
+                            <div class="text-base font-extralight text-gray-500">@dibya22_</div>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-3xl">more_horiz</span>
+                </div>            
+            </div>
+
+        </div>
+
+        <div class="second w-full border-x-[1px] border-x-[#2F3336]">
+            <div class="top h-12 flex border-b-[1px] border-b-[#2F3336] relative">
+                <div class="line absolute w-14 h-1 bottom-0 left-[20%] bg-blue-500 z-10 rounded-full"></div>
+                <div class="left w-1/2 h-full text-center flex items-center justify-center hover:bg-[#181818] font-semibold cursor-pointer">For you</div>
+                <div class="right w-1/2 h-full text-center flex items-center justify-center hover:bg-[#181818] text-gray-500 cursor-pointer">Following</div> 
+            </div>
+
+            <div class="posthere min-h-32 border-b-[1px] border-b-[#2F3336] px-3 py-4 flex flex-col gap-5">
+                <div class="write flex gap-3 items-center">
+                    <img src="https://pbs.twimg.com/profile_images/1830661367629762560/-5vSmlD__400x400.jpg" class="w-12 h-12 rounded-full cursor-pointer">
+                    <textarea placeholder="What is happening?!" class="w-full bg-transparent text-white placeholder-[#6A6A6A] border-none focus:outline-none text-xl resize-none overflow-hidden leading-normal"></textarea>
+                </div>
+                <div class="btns w-[90%] flex justify-between items-center px-auto mx-auto">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-blue-400 font-light text-[20px] cursor-pointer">image</span>
+                        <span class="material-symbols-outlined text-blue-400 font-light text-[20px] cursor-pointer">gif_box</span>
+                        <span class="material-symbols-outlined text-blue-400 font-light text-[20px] cursor-pointer">rocket_launch</span>
+                        <span class="material-symbols-outlined text-blue-400 font-light text-[20px] cursor-pointer">ballot</span>
+                        <span class="material-symbols-outlined text-blue-400 font-light text-[20px] cursor-pointer">sentiment_satisfied</span>
+                        <span class="material-symbols-outlined text-blue-400 font-light text-[20px] cursor-pointer">calendar_clock</span>
+                        <span class="material-symbols-outlined text-[#0F4E78] font-light text-[20px] cursor-default">location_on</span>
+                    </div>
+                    <button class="bg-[#787A7A] px-5 py-1.5 rounded-full text-black font-bold hover:bg-white">Post</button>
+                </div>
+            </div>
+
+            <div class="posts">
+                <div class="post border-b-[1px] border-b-[#2F3336] px-4 pt-3 cursor-pointer flex gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1830661367629762560/-5vSmlD__400x400.jpg" class="w-10 h-10 rounded-full cursor-pointer">
+                    <div class="w-full flex flex-col gap-1">
+                        <div class="user flex items-center justify-between w-full">
+                            <div class="flex gap-1">
+                                <span class="font-bold hover:underline">Dibya</span>
+                                <span class="font-light text-gray-500 ">@dibya22_</span>
+                                <span class="font-light text-gray-500 ">·</span>
+                                <span class="font-light text-gray-500 hover:underline">1m</span>
+                            </div>
+    
+                            <div class="btn ml-auto hidden md:block">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">rocket_launch</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p class="text-[15px] leading-[20px] font-normal font-sans">
+                                Created a clone of X.com using solely Tailwind CSS. For this reason, I also paid attention to certain details in order to learn about various tailwind classes. It is responsive for both desktops and mobile devices. I also learned about MongoDB, ExpressJS, and NodeJS.
+                            </p>
+                            <img src="" alt="" class="">
+                        </div>
+
+                        <div class="icons flex justify-between">
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">mode_comment</span>
+                                <span class="text-[10px] md:text-xs"></span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#01A66F] group-hover:bg-[#071A14] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#01A66F] group-hover:bg-[#071A14] px-1.5 py-1 text-[16px] md:text-[20px]">cached</span>
+                                <span class="text-[10px] md:text-xs"></span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#DE1672] group-hover:bg-[#200914] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#DE1672] group-hover:bg-[#200914] px-1.5 py-1 text-[16px] md:text-[20px]">favorite</span>
+                                <span class="text-[10px] md:text-xs"></span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bar_chart</span>
+                                <span class="text-[10px] md:text-xs"></span>
+                            </div>
+                            
+                            <div>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bookmark</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">ios_share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post border-b-[1px] border-b-[#2F3336] px-4 pt-3 cursor-pointer flex gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1830661367629762560/-5vSmlD__400x400.jpg" class="w-10 h-10 rounded-full cursor-pointer">
+                    <div class="w-full flex flex-col gap-1">
+                        <div class="user flex items-center justify-between w-full">
+                            <div class="flex gap-1">
+                                <span class="font-bold hover:underline">Dibya</span>
+                                <span class="font-light text-gray-500 ">@dibya22_</span>
+                                <span class="font-light text-gray-500 ">·</span>
+                                <span class="font-light text-gray-500 hover:underline">Dec 30, 2024</span>
+                            </div>
+    
+                            <div class="btn ml-auto hidden md:block">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">rocket_launch</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p class="text-[15px] leading-[20px] font-normal font-sans">
+                                Wrapped up my Spotify clone-my first project using JS and my last one of 2024! Time really flies! This project has all the essentials: play, pause, previous, and next tracks. Plus, dynamic playlist, a responsive design, and even metadata display.
+                                <br>
+                                <a href="http://github.com/dibya-22/Spotify-Clone" class="text-blue-400 hover:underline">github.com/dibya-22/Spoti...</a>
+                            </p>
+                            <img src="" alt="" class="rounded-xl">
+                        </div>
+
+                        <div class="icons flex justify-between">
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">mode_comment</span>
+                                <span class="text-[10px] md:text-xs">1</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#01A66F] group-hover:bg-[#071A14] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#01A66F] group-hover:bg-[#071A14] px-1.5 py-1 text-[16px] md:text-[20px]">cached</span>
+                                <span class="text-[10px] md:text-xs"></span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#DE1672] group-hover:bg-[#200914] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#DE1672] group-hover:bg-[#200914] px-1.5 py-1 text-[16px] md:text-[20px]">favorite</span>
+                                <span class="text-[10px] md:text-xs">1</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bar_chart</span>
+                                <span class="text-[10px] md:text-xs">23</span>
+                            </div>
+                            
+                            <div>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bookmark</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">ios_share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post border-b-[1px] border-b-[#2F3336] px-4 pt-3 cursor-pointer flex gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1874558173962481664/8HSTqIlD_400x400.jpg" class="w-10 h-10 rounded-full cursor-pointer">
+                    <div class="w-full flex flex-col gap-1">
+                        <div class="user flex items-center justify-between w-full">
+                            <div class="flex gap-1">
+                                <span class="font-bold hover:underline">Elon Musk</span>
+                                <span class="font-light text-gray-500 ">@elonmusk</span>
+                                <span class="font-light text-gray-500 ">·</span>
+                                <span class="font-light text-gray-500 hover:underline">Jan 13</span>
+                            </div>
+    
+                            <div class="btn ml-auto hidden md:block">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">rocket_launch</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p class="text-[15px] leading-[20px] font-normal font-sans">
+                                
+                            </p>
+                            <img src="https://pbs.twimg.com/media/GhKamP3XoAApiyO?format=jpg&name=medium" alt="" class="rounded-xl">
+                        </div>
+
+                        <div class="icons flex justify-between">
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">mode_comment</span>
+                                <span class="text-[10px] md:text-xs">17K</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#01A66F] group-hover:bg-[#071A14] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#01A66F] group-hover:bg-[#071A14] px-1.5 py-1 text-[16px] md:text-[20px]">cached</span>
+                                <span class="text-[10px] md:text-xs">33K</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#DE1672] group-hover:bg-[#200914] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#DE1672] group-hover:bg-[#200914] px-1.5 py-1 text-[16px] md:text-[20px]">favorite</span>
+                                <span class="text-[10px] md:text-xs">41K</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bar_chart</span>
+                                <span class="text-[10px] md:text-xs">86M</span>
+                            </div>
+                            
+                            <div>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bookmark</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">ios_share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post border-b-[1px] border-b-[#2F3336] px-4 pt-3 cursor-pointer flex gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1633247750010830848/8zfRrYjA_400x400.png" class="w-10 h-10 cursor-pointer">
+                    <div class="w-full flex flex-col gap-1">
+                        <div class="user flex items-center justify-between w-full">
+                            <div class="flex gap-1">
+                                <span class="font-bold hover:underline">Github</span>
+                                <span class="font-light text-gray-500 ">@github</span>
+                                <span class="font-light text-gray-500 ">·</span>
+                                <span class="font-light text-gray-500 hover:underline">21h</span>
+                            </div>
+    
+                            <div class="btn ml-auto hidden md:block">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">rocket_launch</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] p-2">more_horiz</span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p class="text-[15px] leading-[20px] font-normal font-sans">
+                                GitHub Copilot Workspace is a Copilot-native dev environment designed for everyday tasks ✨ 
+                                <br><br>
+                                Here's some tips and tricks to help you get started ⬇️
+                            </p>
+                            <img src="https://github.blog/wp-content/uploads/2024/09/copilot-header-1.png?w=1024" alt="" class="rounded-xl">
+                        </div>
+
+                        <div class="icons flex justify-between">
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">mode_comment</span>
+                                <span class="text-[10px] md:text-xs">3</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#01A66F] group-hover:bg-[#071A14] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#01A66F] group-hover:bg-[#071A14] px-1.5 py-1 text-[16px] md:text-[20px]">cached</span>
+                                <span class="text-[10px] md:text-xs">44</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#DE1672] group-hover:bg-[#200914] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#DE1672] group-hover:bg-[#200914] px-1.5 py-1 text-[16px] md:text-[20px]">favorite</span>
+                                <span class="text-[10px] md:text-xs">197</span>
+                            </div>
+                            <div class="flex items-center text-gray-500 hover:text-[#1D9BF0] group-hover:bg-[#0A171F] group">
+                                <span class="material-symbols-outlined text-gray-500 rounded-full group-hover:text-[#1D9BF0] group-hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bar_chart</span>
+                                <span class="text-[10px] md:text-xs">22k</span>
+                            </div>
+                            
+                            <div>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">bookmark</span>
+                                <span class="material-symbols-outlined text-gray-500 rounded-full hover:text-[#1D9BF0] hover:bg-[#0A171F] px-1.5 py-1 text-[16px] md:text-[20px]">ios_share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third w-full mt-5 md:flex flex-col gap-5 hidden">
+            <div class="search w-[350px] mx-7 px-3 py-1.5 flex items-center gap-0.5 border-2 border-[#2F3336] rounded-full focus-within:border-blue-500 group sticky top-5 bg-black">
+                <span class="material-symbols-outlined text-xl text-[#6A6A6A] group-focus-within:text-white">search</span>
+                <input type="text" placeholder="Search" class="text-white placeholder-[#6A6A6A] bg-transparent border-none focus:outline-none">
+            </div>
+
+            <div class="whats w-[350px] mx-7 pt-3 border-2 border-[#2F3336] rounded-2xl font-sans">
+                <h1 class="text-xl font-bold px-3 mb-3">What's happening</h1>
+
+                <div class="live px-5 py-2 hover:bg-[#161616] flex gap-3 cursor-pointer">
+                    <img src="https://media.licdn.com/dms/image/C4E12AQEBVCR2SpRr9g/article-cover_image-shrink_720_1280/0/1625909824541?e=2147483647&v=beta&t=Y_zSoI8cPUR3wQvPyYK15PLWpQJJ0si6OvsuXFnIC18" alt="" class="w-20 h-20 object-cover">
+                    <div class="title flex flex-col gap-1">
+                        <div class="font-[600] text-base leading-5">Dibya Learning React</div>
+                        <div class="text-sm text-gray-500 font-mono">LIVE</div>
+                    </div>
+                </div>
+
+                <div class="item px-5 py-2 hover:bg-[#161616] flex flex-col gap-1 cursor-pointer">
+                    <div class="text-sm text-gray-500">Trending in India</div>
+                    <div class="font-[600] text-base leading-5">#MahaKumbhMela2025</div>
+                    <div class="text-sm text-gray-500">516.9k posts</div>
+                </div>
+
+                <div class="item px-5 py-2 hover:bg-[#161616] flex flex-col gap-1 cursor-pointer">
+                    <div class="text-sm text-gray-500">Technology · Trending</div>
+                    <div class="font-[600] text-base leading-5">#DibyaFinishedExpressAndMongodb</div>
+                    <div class="text-sm text-gray-500">69.4k posts</div>
+                </div>
+
+                <div class="item px-5 py-2 hover:bg-[#161616] flex flex-col gap-1 cursor-pointer">
+                    <div class="text-sm text-gray-500">Politics · Trending</div>
+                    <div class="font-[600] text-base leading-5">#JammuAndKashmir</div>
+                    <div class="text-sm text-gray-500">20k posts</div>
+                </div>
+
+                <div class="item px-5 py-2 hover:bg-[#161616] flex flex-col gap-1 cursor-pointer">
+                    <div class="text-sm text-gray-500">Entertainment · Trending</div>
+                    <div class="font-[600] text-base leading-5">#BadassRaviKumar</div>
+                    <div class="text-sm text-gray-500">9,267 posts</div>
+                </div>
+                <div class="show px-5 py-3 text-blue-400 hover:bg-[#161616] rounded-b-2xl cursor-pointer">Show more</div>
+            </div>
+
+            <div class="who w-[350px] mx-7 pt-3 border-2 border-[#2F3336] rounded-2xl font-sans">
+                <h1 class="text-xl font-bold px-3 mb-3">Who to follow</h1>
+
+                <div class="whoacc px-5 py-2 hover:bg-[#080808] flex justify-between items-center cursor-pointer">
+                    <div class="info flex gap-3">
+                        <img src="https://pbs.twimg.com/profile_images/1830661367629762560/-5vSmlD__400x400.jpg" class="w-12 h-12 rounded-full">
+                        <div class="user flex flex-col">
+                            <div class="text-base font-semibold hover:underline">Dibya</div>
+                            <div class="text-base font-extralight text-gray-500">@dibya22_</div>
+                        </div>
+                    </div>
+                    <button class="bg-white px-4 py-1 rounded-2xl text-black font-medium hover:bg-gray-200">Follow</button>
+                </div>
+                <div class="whoacc px-5 py-2 hover:bg-[#161616] flex justify-between items-center cursor-pointer">
+                    <div class="info flex gap-3">
+                        <img src="https://pbs.twimg.com/profile_images/1522060025854066688/IZs_lylH_400x400.png" class="w-12 h-12 rounded-full">
+                        <div class="user flex flex-col">
+                            <div class="text-base font-semibold hover:underline">Haris Ali Khan</div>
+                            <div class="text-base font-extralight text-gray-500">@codewithharry</div>
+                        </div>
+                    </div>
+                    <button class="bg-white px-4 py-1 rounded-2xl text-black font-medium hover:bg-gray-200">Follow</button>
+                </div>
+                <div class="whoacc px-5 py-2 hover:bg-[#161616] flex justify-between items-center cursor-pointer">
+                    <div class="info flex gap-3">
+                        <img src="https://pbs.twimg.com/profile_images/1724344976715468800/MasktpKz_400x400.jpg" class="w-12 h-12 rounded-full">
+                        <div class="user flex flex-col">
+                            <div class="text-base font-semibold hover:underline">Hitesh Choudhary</div>
+                            <div class="text-base font-extralight text-gray-500">@Hiteshdotcom</div>
+                        </div>
+                    </div>
+                    <button class="bg-white px-4 py-1 rounded-2xl text-black font-medium hover:bg-gray-200">Follow</button>
+                </div>
+                <div class="show px-5 py-3 text-blue-400 hover:bg-[#161616] rounded-b-2xl cursor-pointer">Show more</div>
+
+            </div>
+
+            <footer class="w-[350px] mx-7 pt-3 text-sm font-normal text-gray-500 grid grid-cols-3 grid-rows-2">
+                <a href=""><span class="hover:underline">Terms of Searvice</span></a>
+                <a href=""><span class="hover:underline">Privacy Policy</span></a>
+                <a href=""><span class="hover:underline">Cookie Policy</span></a>
+                <a href=""><span class="hover:underline">Accessibility</span></a>
+                <a href=""><span class="hover:underline">Ads Info</span></a>
+                <a href=""><span class="hover:underline">More</span></a>
+                <div><span class="cursor-text">&copy;2025 X Corp.</span></div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html> 
